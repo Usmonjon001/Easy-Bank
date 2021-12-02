@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Public+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Public Sans', sans-serif;
+}
+
+header {
+  padding: 250px 0px 170px;
+  background-color: #F2F2F2;
+  background: url("../source/header/backgroundImage.svg") no-repeat right;
+  position: relative;
+}
+
+.header-navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding: 18px 0;
+  background-color: #fff;
+}
+
+.header-navigation .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-navigation-links a {
+  padding: 10px 35px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.107692px;
+  color: #9597A5;
+  text-decoration: none;
+}
+
+.header-navigation-button a {
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 10px 35px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.header-content h1 {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  /* or 114% */
+  letter-spacing: -1px;
+  margin-bottom: 25px;
+  color: #2D314D;
+}
+
+.header-content p {
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  margin-bottom: 35px;
+  letter-spacing: -0.28125px;
+  max-width: 445px;
+  color: #9597A5;
+}
+
+.header-content a {
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 10px 35px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.special-phone {
+  position: absolute;
+  top: 9%;
+  right: 0;
+}
+/*# sourceMappingURL=main.css.map */

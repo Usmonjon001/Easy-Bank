@@ -1,0 +1,16 @@
+$primaryColor: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+$SecondaryColor:  #30C88F;
+$ThirdColor: #2D314D;
+$silver:  #9597A5;
+
+@mixin linkButtonPrimary {
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    border-radius: 22px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 10px 35px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 28px;
+    text-decoration: none;
+}
