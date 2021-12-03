@@ -36,6 +36,7 @@ header{
     width: 100%;
     padding: 18px 0;
     background-color: #fff;
+    z-index: 999;
 }
 
 
@@ -56,6 +57,12 @@ header{
 
 .header-navigation-button a{
     @include linkButtonPrimary()
+}
+
+.header-navigation-button button{
+    display: none;
+    background-color: transparent;
+    border: none;
 }
 
 
@@ -90,4 +97,254 @@ header{
     position: absolute;
     top: 9%;
     right: 0;
+}
+
+
+//  ----------------------------------------------------------------  Section 1      ----------------------------------------------------------------//
+
+.section1{
+    background: #F4F5F7;
+    padding: 96px 0px;
+    & h1{
+        font-style: normal;
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 64px;
+        /* identical to box height, or 160% */
+        letter-spacing: -0.714286px;
+        color: #2D314D;
+        margin-bottom: 16px;
+    }
+
+    & p{
+        font-size: 18px;
+        line-height: 28px;
+        /* or 156% */
+        letter-spacing: -0.28125px;
+        max-width: 635px;
+        color: #9597A5;
+        margin-bottom: 72px;
+    }
+
+    &-cardWrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &-card{
+            max-width: 255px;
+            & img{
+                width: 72px;
+                height: 72px;
+                margin-bottom: 40px;
+            }
+
+            & h1{
+                font-style: normal;
+                font-weight: 100;
+                font-size: 24px;
+                line-height: 28px;
+                /* identical to box height, or 117% */
+                letter-spacing: -0.428571px;
+                color: #2D314D;
+                margin-bottom: 25px;
+            }
+
+            & p{
+                font-size: 16px;
+                line-height: 26px;
+                /* or 162% */
+                letter-spacing: -0.25px;
+                color: #9597A5;
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+
+// ------------------------------------------------------ section 2 -------------------------------------------------- ///
+
+
+.section2{
+    padding: 80px 0px;
+    background: #F2F2F2;
+    &__title{
+        font-style: normal;
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 64px;
+        /* identical to box height, or 160% */
+        letter-spacing: -0.714286px;
+        color: #2D314D;
+        margin-bottom: 40px;
+    }
+
+    &-cardWrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        &-card{
+            max-width: 255px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #fff;
+            &-content{
+                padding: 25px 24px;
+            }
+            & img{
+                width: 100%;
+                object-fit: contain;
+            }
+            & h1{
+                font-style: normal;
+                font-weight: 100;
+                font-size: 16px;
+                line-height: 20px;
+                /* or 125% */
+                letter-spacing: -0.285714px;
+                color: #2D314D;
+                margin-bottom: 10px;
+            }
+
+            & span{
+                font-size: 10px;
+                line-height: 18px;
+                /* identical to box height, or 180% */
+                letter-spacing: -0.15625px;
+                color: #9597A5;
+            }
+
+            & p{
+                font-size: 13px;
+                line-height: 18px;
+                /* or 138% */
+                letter-spacing: -0.203125px;
+                color: #9597A5;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    header{
+        padding: 400px 0px 170px;
+        background-color: #F2F2F2;
+        background-image: url('../source/header/mobileBackground.svg');
+        background-position: 0px 0px;
+        background-size: contain;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .header-navigation{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 18px 0;
+        background-color: #fff;
+        padding: 22px 24px;
+        z-index: 999;
+    }
+    
+    
+    .header-navigation .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .header-navigation-links{
+        display: none;
+    }
+
+    .header-navigation-links a{
+        padding: 10px 35px;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.107692px;
+        color: #9597A5;
+        text-decoration: none;
+    }
+    
+    .header-navigation-button a{
+        @include linkButtonPrimary();
+        display: none;
+    }
+
+    .header-navigation-button button{
+        display: block;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .header-content{
+        padding: 24px;
+        text-align: center;
+    }
+    
+    .header-content h1{
+        font-style: normal;
+        font-weight: 100;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: -0.714286px;
+        color: #2D314D;
+    }
+    
+    .header-content p{
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.234375px;
+        color: #9597A5;
+    }
+    
+    .header-content a{
+        @include linkButtonPrimary()
+    }
+    
+    
+    .special-phone{
+        position: relative;
+        display: none;
+        top: 9%;
+        right: 0;
+    }
+
+
+
+//  ----------------------------------------------------------------  Section 1      ----------------------------------------------------------------//
+    .section1{
+        text-align: center;
+        &-cardWrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    //  ------------------------------ section 2 ------------------------------ //
+
+    .section2{
+        &__title{
+            text-align: center;
+        }
+
+        &-cardWrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &-card{
+                margin-bottom: 25px;
+            }
+        }
+    }
+
 }
